@@ -59,6 +59,8 @@ img {
     padding: 30px;
     display: flex;
     flex-direction: column;
+    background-color: rgb(24, 60, 71);
+    color: #fff;
 }
 
 .products  > .title {
@@ -70,16 +72,18 @@ img {
 }
 .card-container{
     display: flex;
-    gap: 20px;
+    gap: 0px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
     padding: 8px;
+    width: 220px;
 }
 
 .card img {
-    flex: 1 1 100%;
+    width: 220px;
 }
 
 .card > .text {
@@ -87,4 +91,8 @@ img {
     justify-content: center;
     align-items: center;
     padding: 10px;
+}
+
+.card.one {
+    order: 2;
 }
