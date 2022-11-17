@@ -1,5 +1,7 @@
 body {
-    /* color: #fff; */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 ul {
@@ -33,7 +35,8 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(11, 38, 46);
+    background-color: #1F2937;
+    border-bottom:1px solid #19222c;
 }
 
 .links {
@@ -47,8 +50,9 @@ a:hover {
     height: 400px;
     padding: 50px;
     gap: 20px;
-    background-color: rgb(11, 38, 46);
+    background-color: #1F2937;
     color: #fff;
+    border-bottom:1px solid #19222c;
 }
 
 img {
@@ -59,8 +63,8 @@ img {
     padding: 30px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(24, 60, 71);
-    color: #fff;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 .products  > .title {
@@ -84,15 +88,77 @@ img {
 
 .card img {
     width: 220px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
+
+.card img:hover {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+} 
 
 .card > .text {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: normal;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
+
+/* .card > .text:hover {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+} */
 
 .card.one {
     order: 2;
+}
+
+.quote {
+    height: 300px;
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.notification {
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #3882F6;
+    color: #fff;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.notification .title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sign-up {
+    color: #fff;
+    background-color: #3882F6;
+    border-radius: 5px;
+    border: 1.5px solid white;
+    height: fit-content;
+    padding: 8px 20px;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color:#1F2937;
+    color: #fff;
+    height: 60px;
+    text-align: center;
+    padding-top: 25px;
 }
